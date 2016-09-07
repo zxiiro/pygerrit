@@ -29,14 +29,14 @@ import json
 import os
 import unittest
 
-from pygerrit.events import PatchsetCreatedEvent, \
+from pygerrites.events import PatchsetCreatedEvent, \
     RefUpdatedEvent, ChangeMergedEvent, CommentAddedEvent, \
     ChangeAbandonedEvent, ChangeRestoredEvent, \
     DraftPublishedEvent, GerritEventFactory, GerritEvent, UnhandledEvent, \
     ErrorEvent, MergeFailedEvent, ReviewerAddedEvent, TopicChangedEvent
-from pygerrit.client import GerritClient
-from pygerrit import GerritReviewMessageFormatter
-from pygerrit.rest import GerritReview
+from pygerrites.client import GerritClient
+from pygerrites import GerritReviewMessageFormatter
+from pygerrites.rest import GerritReview
 
 EXPECTED_TEST_CASE_FIELDS = ['header', 'footer', 'paragraphs', 'result']
 
