@@ -1,5 +1,5 @@
-Pygerrit - Client library for interacting with Gerrit Code Review
-=================================================================
+pygerrit-event-stream - Client library for interacting with Gerrit Event Stream
+===============================================================================
 
 .. image:: https://img.shields.io/pypi/v/pygerrit.png
 
@@ -7,11 +7,13 @@ Pygerrit - Client library for interacting with Gerrit Code Review
 
 .. image:: https://img.shields.io/pypi/l/pygerrit.png
 
-Pygerrit provides a simple interface for clients to interact with
-`Gerrit Code Review`_ via ssh or the REST API.
+pygerrit-event-stream provides a simple interface for clients to interact with
+`Gerrit Code Review`_ via the Gerrit Event Stream over ssh.
 
-This repository is no longer actively maintained. Development has
-moved to `pygerrit2`_.
+This repository is a fork of `pygerrit`_ with the Rest API stripped out and
+event-stream components updated. `pygerrit`_ is no longer maintained upstream.
+
+If you need support for the Gerrit Rest API consider looking into `pygerrit2`_.
 
 Prerequisites
 -------------
@@ -119,18 +121,21 @@ REST API interface works.
 Copyright and License
 ---------------------
 
-Copyright 2011 Sony Ericsson Mobile Communications. All rights reserved.
+Copyright (c) 2011 Sony Ericsson Mobile Communications. All rights reserved.
 
-Copyright 2012 Sony Mobile Communications. All rights reserved.
+Copyright (c) 2012 Sony Mobile Communications. All rights reserved.
+
+Copyright (c) 2016 Thanh Ha. All rights reserved.
 
 Licensed under The MIT License.  Please refer to the `LICENSE`_ file for full
 license details.
 
 .. _`Gerrit Code Review`: https://gerritcodereview.com/
+.. _`pygerrit`: https://github.com/sonyxperiadev/pygerrit
 .. _`pygerrit2`: https://github.com/dpursehouse/pygerrit2
 .. _`requests`: https://github.com/kennethreitz/requests
 .. _`paramiko`: https://github.com/paramiko/paramiko
 .. _example: https://github.com/sonyxperiadev/pygerrit/blob/master/example.py
 .. _rest_example: https://github.com/sonyxperiadev/pygerrit/blob/master/rest_example.py
 .. _`HTTP upload settings`: https://gerrit-documentation.storage.googleapis.com/Documentation/2.12/user-upload.html#http
-.. _LICENSE: https://github.com/sonyxperiadev/pygerrit/blob/master/LICENSE
+.. _LICENSE: https://github.com/zxiiro/pygerrit-event-stream/blob/master/LICENSE
